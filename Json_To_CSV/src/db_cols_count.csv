@@ -1,0 +1,32 @@
+DB COLS,,Jsondata,,NOTES FROM SL ANALYSIS
+period,,hard code ,,"In call_mapreduce.py from Ingestor camdata.server.scripts it is hard coded as ""201704"""
+providerRecordId,,?,,"It's Asset's ID in SL, what in Azure? InstanceID or something else?"
+extractDate,,0,,"extractDateStr = manifest['file_timestamp']extractDate = datetime.datetime.strptime(extractDateStr, '%Y%m%d%H%M%S')-- This is written in Process.py"
+serviceStartDate,,0,,              
+serviceEndDate,,0,,
+invoiceStartDate,,0,,
+invoiceEndDate,,0,,
+providerInvoiceId,,?,,Do we have invoice ID for Azure? This is invoice ID for SL.
+providerFinalBillFlag,,0,,
+providerName,,hard code ,,"Hard coded in ""camstrings"" fileUsed in camdata.server.Process in INGESTORproviderId = providerName"
+assetAccountId,,accountId,,
+billingAccountId,,accountId,,
+providerRegion,,resourceLocation,?,
+assetName,,,?,
+providerAssetId,,instanceId,,
+description,,,,Could not find
+quantity,,,,
+unitOfMeasure,,unitOfMeasure,,
+providerCurrency,,hard code ,,"camstrings.COST_CURRENCY,"
+pcProviderUnitCost,,?,,
+pcProviderTotalCost,,?,,
+pcProviderTaxCost,,?,,
+UnitCost,,,?cost,
+pcCustomerTotalCost,,,,
+customerCurrency,,,,"currency as customerCurrency -- camstrings.COST_CURRENCY,"
+customerConversionRate,,,,camstrings.COST_CONVERSION_RATE
+customerCurrencyDate,,,,"currencyDate = camstrings.COST_CURRENCY_DATE    if not currencyDate:        currencyDate = 'loadDate' from costs_from_sl_raw.py"
+orderId,,NEW,,
+providerServiceName,,NEW,,
+providerServiceDescription,,NEW,,
+tags,,tags,,

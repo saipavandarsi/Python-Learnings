@@ -1,0 +1,13 @@
+# Simple tests to verify things work against a live REST service that returns JSON.. Github is a natural one
+---
+- config:
+  - testset: "Test my Rest Web Services"
+- test:
+  - name: "Basic test for Create and Get Users for Register App"
+  - headers: {accept: 'application/json'}
+  - url: "/getusers/"
+  - validators: # operator is applied as: <actual> <operator> <expected>
+     - compare: {header: "content-type", comparator: contains, expected: 'application/json'}
+    # - compare: {jsonpath_mini: "name",   comparator: "eq",     expected: "abc"}
+    # - compare: {raw_body: "",      comparator: "regex",     expected: '.*'}
+     #- extract_test: {jsonpath_mini: "does_not_exist",  test: "not_exists"}

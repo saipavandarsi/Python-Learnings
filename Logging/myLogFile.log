@@ -1,0 +1,9 @@
+ConfigUseLogExample.py:6 -   <module>()  Often makes a very good meal of visiting Tourist
+ConfigUseLogExample.py:9 -       myFn()  Hello... We are inside myFn() now...
+ConfigUseLogExample.py:6 -   <module>()  Am in logger.info statement
+ConfigUseLogExample.py:7 -   <module>()  Often makes a very good meal of visiting Tourist
+ConfigUseLogExample.py:10 -       myFn()  Hello... We are inside myFn() now...
+ConfigUseLogExample.py:6 -   <module>()  
+ Am in logger.info statement
+ConfigUseLogExample.py:7 -   <module>()  Often makes a very good meal of visiting Tourist
+ConfigUseLogExample.py:10 -       myFn()  Hello... We are inside myFn() now...
